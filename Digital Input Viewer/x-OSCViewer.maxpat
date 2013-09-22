@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 610.0, 104.0, 589.0, 574.0 ],
+		"rect" : [ 371.0, 213.0, 369.0, 554.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,19 +28,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.0, 33.0, 330.0, 18.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -55,7 +42,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 488.029175, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 465.029175, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 378.078796, 20.215963, 19.542091 ],
 					"text" : "",
@@ -81,7 +68,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 463.58371, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 440.58371, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 353.633331, 20.215963, 19.542091 ],
 					"text" : "",
@@ -107,7 +94,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 439.138214, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 416.138214, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 329.187836, 20.215963, 19.542091 ],
 					"text" : "",
@@ -133,7 +120,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 414.692749, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 391.692749, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 304.742371, 20.215963, 19.542091 ],
 					"text" : "",
@@ -159,7 +146,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 390.247284, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 367.247284, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 280.296906, 20.215963, 19.542091 ],
 					"text" : "",
@@ -185,7 +172,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 365.801819, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 342.801819, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 255.85144, 20.215963, 19.542091 ],
 					"text" : "",
@@ -211,7 +198,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 341.356323, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 318.356323, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 231.40593, 20.215963, 19.542091 ],
 					"text" : "",
@@ -237,7 +224,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 316.910858, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 293.910858, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 206.960464, 20.215963, 19.542091 ],
 					"text" : "",
@@ -263,7 +250,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 292.465393, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 269.465393, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 182.514999, 20.215963, 19.542091 ],
 					"text" : "",
@@ -289,7 +276,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 268.019897, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 245.019913, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 158.069519, 20.215963, 19.542091 ],
 					"text" : "",
@@ -315,7 +302,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 243.574448, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 220.574448, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 133.624054, 20.215963, 19.542091 ],
 					"text" : "",
@@ -341,7 +328,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 219.128967, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 196.128967, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 109.178574, 20.215963, 19.542091 ],
 					"text" : "",
@@ -367,7 +354,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 194.683502, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 171.683502, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 84.733109, 20.215963, 19.542091 ],
 					"text" : "",
@@ -393,7 +380,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 170.238022, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 147.238022, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 60.287632, 20.215963, 19.542091 ],
 					"text" : "",
@@ -419,7 +406,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 145.792542, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 122.792549, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 35.842159, 20.215963, 19.542091 ],
 					"text" : "",
@@ -445,7 +432,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 284.03009, 121.347076, 20.215963, 19.542091 ],
+					"patching_rect" : [ 284.03009, 98.347076, 20.215963, 19.542091 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.823553, 11.396687, 20.215963, 19.542091 ],
 					"text" : "",
@@ -464,7 +451,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 16,
 					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 6.0, 81.0, 221.5, 20.0 ],
+					"patching_rect" : [ 6.0, 58.0, 221.5, 20.0 ],
 					"text" : "unpack 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
@@ -503,8 +490,8 @@
 					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.0, 112.0, 301.0, 454.0 ],
-					"pic" : "THD:/Users/tj3mitchell/Work/Research/Projects/xOSC/Demos/OscArcade/InputViewer/x-OSC.gif",
+					"patching_rect" : [ 278.0, 89.0, 301.0, 454.0 ],
+					"pic" : "THD:/Users/tj3mitchell/Work/Research/Projects/xOSC/Demos/OscArcade/InputViewer/x-OSCInputs.gif",
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 2.0, 301.0, 454.0 ]
 				}
@@ -514,15 +501,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -683,7 +661,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ]
+		"dependency_cache" : [ 			{
+				"name" : "x-OSCInputs.gif",
+				"bootpath" : "/Users/tj3mitchell/Work/Research/Projects/xOSC/Demos/OscArcade/InputViewer",
+				"patcherrelativepath" : "",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+ ]
 	}
 
 }

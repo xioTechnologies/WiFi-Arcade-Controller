@@ -1,5 +1,13 @@
 /**
  Java program for talking to x-OSC using the illposed JavaOSC library.
+ This program sets up an OSC Receiver and Sender to connect to x-OSC in ad 
+ hock mode on the default ports. Digital input messages from x-OSC are converted
+ to basic keystroke messages for the Arcade demo. Although sending is not used
+ in the Arcade demo the main thread also toggles the state of x-OSCs 16th 
+ digital output, just for fun (and to show how it's done).
+ 
+ This demo uses the illposed JavaOSC library packaged here and also available to
+ download from here: http://www.illposed.com/software/javaosc.html
 */
 
 import com.illposed.osc.*;
@@ -9,20 +17,25 @@ import java.awt.event.KeyEvent;
 
 public class Xosc
 {
-	public static void main(String[] args) throws java.net.SocketException, java.net.UnknownHostException, java.io.IOException, java.lang.InterruptedException, java.awt.AWTException
+	public static void main(String[] args) 	throws 
+											java.net.SocketException, 
+											java.net.UnknownHostException, 
+											java.io.IOException, 
+											java.lang.InterruptedException, 
+											java.awt.AWTException
 	{
 		//Setup reciever
-		xOSCReciever xoscRecieve = new xOSCReciever(8000);
+		xOSCReceiver xoscRecieve = new xOSCReceiver (8000);
 		xoscRecieve.start();
 
 		//Setup sender
-		xOSCSender xoscSender = new xOSCSender(InetAddress.getByName(/*"169.254.1.1"*/"127.0.0.1"), 9000);
+		xOSCSender xoscSender = new xOSCSender 
+					(InetAddress.getByName(/*"169.254.1.1"*/"127.0.0.1"), 9000);
 
 
-		for (int i = 0; i < 1000; i++)  // run application for 1000 seconds then shut down
+		for (int i = 0; i < 1000; i++)  // run application for 1000 seconds 
 		{
-			//System.out.println("Yes");
-			xoscSender.digitalOut (16, i%2);    // blink LED
+			xoscSender.digitalOut (16, i%2);    // toggle LED
 
 			try
 			{
@@ -40,9 +53,9 @@ public class Xosc
 };
 
 /**
-Class to recieve messages from the x-OSC on its own thread
+Class to recieve messages from x-OSC on its own thread
 */
-class xOSCReciever extends Thread implements OSCListener
+class xOSCReceiver extends Thread implements OSCListener
 {
 	private int port;
 	private OSCPortIn receiver;
@@ -50,10 +63,9 @@ class xOSCReciever extends Thread implements OSCListener
 	private final int NumInputs = 16;
 	private Robot robot;
 
-	public xOSCReciever(int port_) throws java.awt.AWTException
+	public xOSCReceiver(int port_) throws java.awt.AWTException
 	{
-		// Give this particular thread a
-		//   name:  "thread 'LABEL'".
+		// Give this particular thread a name:  "thread 'LABEL'".
 		super("x-OSCthread");
 		port = port_;
 		digitalInputStates = new Object[NumInputs];
@@ -218,7 +230,8 @@ class xOSCReciever extends Thread implements OSCListener
 			System.out.println("No Match");
 		}
 
-//		System.out.println("Handler1 called with address " + message.getAddress());
+//		System.out.println("Handler1 called with address " + 
+//							message.getAddress());
 
 		// Print out values
 //		Object[] values = message.getArguments();
@@ -243,7 +256,8 @@ class xOSCReciever extends Thread implements OSCListener
 		}
 
 		receiver.addListener("/input/digital", this);
-//      we don't use these here but you might want them for your x-OSC application.
+//      we don't use these here but you might want them 
+//		for your x-OSC application.
 //		receiver.addListener("/input/analog", this);
 //		receiver.addListener("/input/digital", handler1);
 //		receiver.addListener("/ping", handler1);
@@ -262,12 +276,17 @@ class xOSCSender
 	private int remotePort;
 	private OSCPortOut sender;
 
-	public xOSCSender (InetAddress remoteIP_, int port_) throws UnknownHostException, SocketException, InterruptedException, java.io.IOException
+	public xOSCSender (InetAddress remoteIP_, int port_) throws 
+														 UnknownHostException, 
+														 SocketException, 
+														 InterruptedException, 
+														 java.io.IOException
 	{
 		InetAddress remoteIP = remoteIP_;
 		int remotePort = port_;
 
-		System.out.println("Connecting to host " + remoteIP.toString() + "on port" + remotePort + "...");
+		System.out.println("Connecting to host " + remoteIP.toString() + 
+			"on port" + remotePort + "...");
 		sender = new OSCPortOut(remoteIP, remotePort);
 
 	}

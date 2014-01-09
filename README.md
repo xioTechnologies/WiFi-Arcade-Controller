@@ -22,7 +22,7 @@ The Java software uses the <a href="http://www.illposed.com/software/javaosc.htm
 
 **Wiring**
 <div align="center">
-<img src="http://www.x-io.co.uk/wordpress/wp-content/uploads/2013/09/WiFi-Arcade-Controller-Wiring.png" alt="GyroScratch Wiring" style="width: 600px;"/>
+<img src="http://www.x-io.co.uk/wordpress/wp-content/uploads/2013/09/WiFi-Arcade-Controller-Wiring.png" alt="Arcade-Controller Wiring" style="width: 600px;"/>
 </div>
 
 

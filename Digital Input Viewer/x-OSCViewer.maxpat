@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 6,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 371.0, 213.0, 369.0, 554.0 ],
@@ -465,8 +466,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 6.0, 32.0, 105.0, 20.0 ],
-					"text" : "route /input/digital"
+					"patching_rect" : [ 6.0, 32.0, 111.0, 20.0 ],
+					"text" : "route /inputs/digital"
 				}
 
 			}
@@ -661,14 +662,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "x-OSCInputs.gif",
-				"bootpath" : "/Users/tj3mitchell/Work/Research/Projects/xOSC/Demos/OscArcade/InputViewer",
-				"patcherrelativepath" : "",
-				"type" : "GIFf",
-				"implicit" : 1
-			}
- ]
+		"dependency_cache" : [  ]
 	}
 
 }

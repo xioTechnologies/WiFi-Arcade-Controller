@@ -86,7 +86,7 @@ class xOSCReceiver extends Thread implements OSCListener
 	{
 		//check for matching address
 		System.out.println("Address:" + message.getAddress() + ":");
-		if (message.getAddress().equals("/input/digital"))
+		if (message.getAddress().equals("/inputs/digital"))
 		{
 			Object[] values = message.getArguments();
 			if (values.length >= NumInputs)
@@ -255,11 +255,11 @@ class xOSCReceiver extends Thread implements OSCListener
 
 		}
 
-		receiver.addListener("/input/digital", this);
+		receiver.addListener("/inputs/digital", this);
 //      we don't use these here but you might want them 
 //		for your x-OSC application.
-//		receiver.addListener("/input/analog", this);
-//		receiver.addListener("/input/digital", handler1);
+//		receiver.addListener("/inputs/analog", this);
+//		receiver.addListener("/inputs/digital", handler1);
 //		receiver.addListener("/ping", handler1);
 
 		System.out.println("Server is listening on port " + port + "...");
